@@ -1,15 +1,7 @@
-let sketchWith;
-let sketchHight;
 
-let squareSize;
-let spacing;
-
-let color1;
-let color2;
-
-let columns;
-let rows;
-
+function preload(){
+  // preload assets
+}
 
 function setup() {
   squareSize = random(4, 80);
@@ -18,8 +10,8 @@ function setup() {
   sketchHight = squareSize * (2 * Math.floor(random(1, 11)) - 1); 
 
   spacing = squareSize * 2; 
-  columns = Math.floor(sketchWith / spacing);
-  rows = Math.floor(sketchHight / spacing);
+  columns = Math.ceil(sketchWith / spacing);
+  rows = Math.ceil(sketchHight / spacing);
 
   color1 = color(100, 100, random(100, 255));
   color2 = color(100, 100, random(100, 255));
