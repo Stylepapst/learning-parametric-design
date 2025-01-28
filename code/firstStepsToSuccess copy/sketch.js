@@ -26,7 +26,7 @@ function setup() {
   for(let x = 0; x <= 6; x += 1) {
     for(let y = 0; y <= 6; y += 1) {
       
-      color1 = color(100, 100, random(100, 255));
+      color1 = color(50, 50, random(50, 255));
       extraCanvas.fill(color1);
 
       boxWith = (10 * (Math.ceil(random(1, 6))));
@@ -64,4 +64,4 @@ function setup() {
 }
 
 function draw() {  
-} 
+}
