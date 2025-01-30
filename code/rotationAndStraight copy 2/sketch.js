@@ -57,7 +57,8 @@ function setup() {
     for(let d = 0; d <= 10; d +=1) {
       if(c % 2 === 0 && d % 2 === 0) {
         image(extraCanvas, c * 60, d * 60);
-      } else if(c % 2 != 0 && d % 2 === 0){
+      } 
+      else if(c % 2 != 0 && d % 2 === 0){
         push();
         scale(-1, 1);
         image(extraCanvas, c * (-60) - 60, d * 60);
