@@ -13,6 +13,9 @@ function preload(){
 }
 
 function setup() {
+  createCanvas(100, 100);
+
+function setup() {
   angleMode(DEGREES);
   
   createCanvas(sketchWith, sketchHight);
@@ -21,11 +24,11 @@ function setup() {
   extraCanvas.background(100, 100, random(100, 255));
   extraCanvas.noStroke();
   
-  for(let x = 0; x <= extraWith; x += 5) {
-    for(let y = 0; y <= extraHight; y += 5) {
+  for(let x = 0; x <= extraWith; x += 1) {
+    for(let y = 0; y <= extraHight; y += 1) {
       
       boxWith = (Math.ceil(random(1, 20)));
-      boxHight = (Math.ceil(random(1, 120)));   
+      boxHight = (Math.ceil(random(1, 120))); s  
      
       extraCanvas.fill(50, 50, random(50, 255));
 
@@ -79,4 +82,3 @@ function setup() {
 
   function draw() {  
   }
-}

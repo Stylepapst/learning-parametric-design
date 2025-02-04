@@ -15,7 +15,7 @@ function preload(){
 
 function setup() {
   
-  color1 = color(20, 20, (10 * random(2, 25.5)));
+  color1 = color(20, 20, (random(20, 255)));
   createCanvas(sketchWith, sketchHight);
 
   extraCanvas = createGraphics(60, 60);
@@ -26,7 +26,7 @@ function setup() {
   for(let x = 0; x <= 6; x += 1) {
     for(let y = 0; y <= 6; y += 1) {
       
-      color1 = color(100, 100, random(100, 255));
+      color1 = color(50, 50, random(50, 255));
       extraCanvas.fill(color1);
 
       boxWith = (10 * (Math.ceil(random(1, 6))));
